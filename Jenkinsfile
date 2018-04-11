@@ -32,7 +32,7 @@ pipeline {
 
         stage('Copy') {
             steps {
-                sh 'cp  \'/var/jenkins_home/workspace/Java-Maven/target/my*.jar\' /home/GitHub'
+                sh 'cp target/my-app-1.0-SNAPSHOT.jar /home/GitHub'
             }
         }
 
