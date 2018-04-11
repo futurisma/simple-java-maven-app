@@ -30,6 +30,11 @@ pipeline {
             }
         }
 
+        stage('Copy') {
+            steps {
+                sh 'cp  \'target/my*.jar\' /home/GitHub'
+            }
+        }
 
     }
 }
